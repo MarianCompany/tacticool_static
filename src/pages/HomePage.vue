@@ -42,7 +42,7 @@ title.value = "Tacticool";
 
 onMounted(async () => {
   try {
-    await fetch('https://1l-s2s.my.games/v/adid/3763396_1/pid/105039/f/1/?_1larg_sub=tacticool.static.1&_1larg_responseType=0');
+    await fetch('https://1l-s2s.my.games/v/adid/3763396_1/pid/105039/f/1/?_1larg_sub=tacticool.static.1&_1larg_responseType=0', { credentials: 'include' });
   } catch (error) {
     console.error(`Impression fire error: ${error.message}`);
   }
