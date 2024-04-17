@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: 'Arial';
+	src: url('../assets/fonts/ArialRegular.eot');
+	src:
+		url('../assets/fonts/ArialRegular.eot?#iefix') format('embedded-opentype'),
+		url('../assets/fonts/ArialRegular.woff') format('woff'),
+		url('../assets/fonts/ArialRegular.ttf') format('truetype');
+	font-style: normal;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'Arial';
+	src: url('../assets/fonts/ArialBlack.eot');
+	src:
+		url('../assets/fonts/ArialBlack.eot?#iefix') format('embedded-opentype'),
+		url('../assets/fonts/ArialBlack.woff') format('woff'),
+		url('../assets/fonts/ArialBlack.ttf') format('truetype');
+	font-style: normal;
+	font-weight: 900;
+}
+
+@font-face {
+	font-family: 'Arial';
+	src: url('../assets/fonts/ArialBold.eot');
+	src:
+		url('../assets/fonts/ArialBold.eot?#iefix') format('embedded-opentype'),
+		url('../assets/fonts/ArialBold.woff') format('woff'),
+		url('../assets/fonts/ArialBold.ttf') format('truetype');
+	font-style: normal;
+	font-weight: 700;
+}
+
+body {
+	min-height: 100vh;
+	font-family: 'Arial', sans-serif;
+}
+
+.bg-video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+.bg-video-darken {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+}
+
+.main-section {
+	flex: 1;
+}
+
+@media screen and (min-height: 500px) and (min-width: 768px) {
+	.main-btn {
+		margin-top: 25px !important;
+	}
+}
+
+@media screen and (min-height: 600px) and (min-width: 768px) {
+	.main-btn {
+		margin-top: 80px !important;
+	}
+}
+
+@media screen and (min-height: 700px) and (min-width: 768px) {
+	.main-btn {
+		margin-top: 125px !important;
+	}
+}
+
+@media screen and (min-width: 1048px) {
+	.bg-video, .bg-video-darken {
+		display: inline-block;
+	}
+}
+
+@media screen and (min-width: 1048px) {
+	.bg-video, .bg-video-darken {
+		height: max(calc(100vh - 80px), 100%);
+	}
+}
