@@ -14,7 +14,7 @@ defineOptions({
 });
 const onBtnClick = async () => {
   try {
-    await fetch('https://1l-s2s.my.games/s2s/adid/3763396_1/pid/105039/f/1/?_1larg_sub=tacticool.tlou&_1larg_responseType=0');
+    await fetch('https://1l-s2s.my.games/s2s/adid/3763396_1/pid/105039/f/1/?_1larg_sub=tacticool.static.1&_1larg_responseType=0');
   } catch (error) {
     console.error(`Click fire error: ${error.message}`);
   }
